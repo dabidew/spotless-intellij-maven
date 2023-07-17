@@ -7,15 +7,15 @@ plugins {
     // Java support
     id("java")
     // Kotlin support
-    id("org.jetbrains.kotlin.jvm") version "1.6.0"
+    id("org.jetbrains.kotlin.jvm") version "1.9.0"
     // Gradle IntelliJ Plugin
-    id("org.jetbrains.intellij") version "1.12.0"
+    id("org.jetbrains.intellij") version "1.15.0"
     // Gradle Changelog Plugin
-    id("org.jetbrains.changelog") version "1.3.1"
+    id("org.jetbrains.changelog") version "2.1.2"
     // Gradle Qodana Plugin
     id("org.jetbrains.qodana") version "0.1.13"
     //  Spotless
-    id("com.diffplug.spotless") version "6.12.0"
+    id("com.diffplug.spotless") version "6.19.0"
 }
 
 group = properties("pluginGroup")
@@ -32,7 +32,7 @@ intellij {
     version.set(properties("platformVersion"))
     type.set(properties("platformType"))
 
-    // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
+    // Plugin Dependencies. Uses `platformPlugins` property from the maven.properties file.
     plugins.set(properties("platformPlugins").split(',').map(String::trim).filter(String::isNotEmpty))
 }
 

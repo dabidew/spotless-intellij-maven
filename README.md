@@ -1,18 +1,18 @@
-# Spotless Intellij Gradle
+# Spotless Intellij Maven
 
 ![Build](https://github.com/ragurney/spotless/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/18321.svg)](https://plugins.jetbrains.com/plugin/18321)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/18321.svg)](https://plugins.jetbrains.com/plugin/18321)
 
 <!-- Plugin description -->
-An IntelliJ plugin to allow running the [spotless](https://github.com/diffplug/spotless) gradle task
+An IntelliJ plugin to allow running the [spotless](https://github.com/diffplug/spotless) maven task
 from within the IDE on the current file selected in the editor. 
 
 You may find the spotless action via <kbd>Code</kbd> > <kbd>Reformat Code with Spotless</kbd>.
 
 ![spotlessdemo](https://user-images.githubusercontent.com/15261525/147841908-d5cc3bda-56c8-4cbd-ba29-13ebe29f6a1d.gif)
 
-Report bugs or contribute enhancements on GitHub [(ragurney/spotless-intellij-gradle)](https://github.com/ragurney/spotless-intellij-gradle)
+Report bugs or contribute enhancements on GitHub [(dabidew/spotless-intellij-maven)](https://github.com/dabidew/spotless-intellij-maven)
 <!-- Plugin description end -->
 
 ## Features
@@ -20,7 +20,7 @@ Report bugs or contribute enhancements on GitHub [(ragurney/spotless-intellij-gr
   You may also assign a keyboard shortcut to this action for convenience.
 
 ## Installation
->**NOTE:** Before using this extension, ensure you've [configured Spotless](https://github.com/diffplug/spotless/tree/master/plugin-gradle)
+>**NOTE:** Before using this extension, ensure you've [configured Spotless](https://github.com/diffplug/spotless/tree/main/plugin-maven)
 correctly in your Gradle build file. (Run ./gradlew spotlessDiagnose to prepare & validate Spotless.)
 
 ### Using IDE built-in plugin system:
