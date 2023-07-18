@@ -1,8 +1,8 @@
 # Spotless Intellij Maven
 
 ![Build](https://github.com/ragurney/spotless/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/18321.svg)](https://plugins.jetbrains.com/plugin/18321)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/18321.svg)](https://plugins.jetbrains.com/plugin/18321)
+<!-- TODO, actually make a plugin [![Version](https://img.shields.io/jetbrains/plugin/v/18321.svg)](https://plugins.jetbrains.com/plugin/18321)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/18321.svg)](https://plugins.jetbrains.com/plugin/18321)-->
 
 <!-- Plugin description -->
 An IntelliJ plugin to allow running the [spotless](https://github.com/diffplug/spotless) maven task
