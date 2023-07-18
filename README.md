@@ -8,7 +8,7 @@
 An IntelliJ plugin to allow running the [spotless](https://github.com/diffplug/spotless) maven task
 from within the IDE on the current file selected in the editor. 
 
-You may find the spotless action via <kbd>Code</kbd> > <kbd>Reformat Code with Spotless</kbd>.
+You may find the spotless action via <kbd>Code</kbd> > <kbd>Reformat All Files With Spotless For Maven</kbd> or <kbd>Code</kbd> > <kbd>Reformat Current File With Spotless For Maven</kbd>.
 
 ![spotlessdemo](https://user-images.githubusercontent.com/15261525/147841908-d5cc3bda-56c8-4cbd-ba29-13ebe29f6a1d.gif)
 
@@ -21,20 +21,20 @@ Report bugs or contribute enhancements on GitHub [(dabidew/spotless-intellij-mav
 
 ## Installation
 >**NOTE:** Before using this extension, ensure you've [configured Spotless](https://github.com/diffplug/spotless/tree/main/plugin-maven)
-correctly in your Gradle build file. (Run ./gradlew spotlessDiagnose to prepare & validate Spotless.)
+correctly in your pom file.
 
 ### Using IDE built-in plugin system:
 
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Spotless Gradle"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Spotless Maven"</kbd> >
   <kbd>Install Plugin</kbd>
 
 ### Manually:
 
-  Download the [latest release](https://github.com/ragurney/spotless/releases/latest) and install it manually using
+  Download the [latest release](https://github.com/dabidew/spotless-intellij-maven/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 ## How it Works
-This plugin runs the `spotlessApply` Gradle task on the current file using the [Spotless IDE hook](https://github.com/diffplug/spotless/blob/main/plugin-gradle/IDE_HOOK.md). 
+This plugin runs the `spotless:apply` Maven taks on the current file or the Maven module of the current file.
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
