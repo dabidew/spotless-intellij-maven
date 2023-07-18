@@ -32,17 +32,17 @@ public class ReformatFileAction extends AnAction {
     if (editor == null) {
       return;
     }
-      file = PsiDocumentManager.getInstance(project).getPsiFile(editor.getDocument());
+    file = PsiDocumentManager.getInstance(project).getPsiFile(editor.getDocument());
 
-      if (file == null) {
-        return;
-      }
+    if (file == null) {
+      return;
+    }
 
-      final Module moduleForFile = ModuleUtil.findModuleForFile(file);
-      if (moduleForFile == null) {
-        return;
-      }
+    final Module moduleForFile = ModuleUtil.findModuleForFile(file);
+    if (moduleForFile == null) {
+      return;
+    }
 
-      new ReformatCodeProcessor(file, ReformatCodeProcessor.ReformatScope.FILE).run();
+    new ReformatCodeProcessor(file, ReformatCodeProcessor.ReformatScope.FILE).run();
   }
 }
